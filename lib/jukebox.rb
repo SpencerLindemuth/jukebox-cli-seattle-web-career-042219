@@ -33,7 +33,7 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   command = gets.chomp
-  if command.is_i? == Int
+  if command.is_i?
     if command.to_i <= songs.length
       puts "Playing #{songs[command -1]}"
     else
