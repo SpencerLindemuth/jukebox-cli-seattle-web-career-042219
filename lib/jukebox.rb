@@ -35,7 +35,7 @@ def play(songs)
   command = gets.chomp
   if command.is_i?
     if command.to_i <= songs.length
-      puts "Playing #{songs[command -1]}"
+      puts "Playing #{songs[command.to_i - 1]}"
     else
       puts "Invalid input, please try again"
     end
