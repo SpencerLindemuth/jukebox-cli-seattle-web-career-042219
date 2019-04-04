@@ -30,7 +30,22 @@ def exit_jukebox()
 
 end
 
+def play(songs)
+  puts "Please enter a song name or number:"
+  command = gets.chomp
+  if command.class == Int && command <=songs.length
+    puts "Playing #{songs[command -1]}"
 
+  elsif songs.include?(command)
+    puts "Playing #{songs[songs.index(command)]}"
+
+  else
+    puts "Invalid input, please try again"
+  end
+
+  
+    
+      
 
 
 
