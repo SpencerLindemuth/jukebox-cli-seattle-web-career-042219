@@ -36,7 +36,7 @@ def play(songs)
   if command.is_i? == Int
     if command.to_i <= songs.length
       puts "Playing #{songs[command -1]}"
-    else 
+    else
       puts "Invalid input, please try again"
     end
 
