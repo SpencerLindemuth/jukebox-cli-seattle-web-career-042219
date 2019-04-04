@@ -24,3 +24,45 @@ def list(songs)
     puts song
   end
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+def run(songs)
+  while true
+
+    help()
+    puts "Please enter a command:"
+    command = gets.chomp
+    
+    case command 
+
+    when "help"
+      help
+
+    when "list"
+      list(songs)
+
+    when "play"
+      play(songs)
+
+    when "exit"
+      exit_jukebox
+      exit
+
+    else 
+      puts "Invalid input, please try again"
+
+  
+
+end
+
