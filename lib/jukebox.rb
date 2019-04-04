@@ -39,9 +39,6 @@ def play(songs)
   elsif songs.include?(command)
     puts "Playing #{songs[songs.index(command)]}"
 
-  elsif command == "list"
-    list(songs)
-
   else
     puts "Invalid input, please try again"
   end
