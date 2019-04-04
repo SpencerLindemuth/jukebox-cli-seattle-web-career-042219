@@ -43,8 +43,8 @@ def run(songs)
     help()
     puts "Please enter a command:"
     command = gets.chomp
-    
-    case command 
+
+    case command
 
     when "help"
       help
@@ -59,10 +59,9 @@ def run(songs)
       exit_jukebox
       exit
 
-    else 
+    else
       puts "Invalid input, please try again"
 
-  
+
 
 end
-
